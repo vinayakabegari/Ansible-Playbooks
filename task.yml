@@ -1,0 +1,8 @@
+--- # My Second Test Playbook
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: Install HTTPD on centos 7
+      action: yum name=httpd state=installed
